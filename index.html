@@ -9,79 +9,14 @@
 </head>
 
 <body>
-  <header>
-    <div>
-      <img src="images/logo.png" alt="RentPlan logo">
-    </div>  
-  </header>
-
-  <div class="container-fluid">
-    <div id="search" class="row">
-      <div class="col-md-12 col-lg-8 col-lg-offset-2">
-       
-        <form class="form-horizontal" action="">
-           
-          <div class="row form-group">
-            <div class="col-xs-8 col-sm-9 col-md-10 col-lg-10">
-              <input type="url" name="buy_search" id="buy_search" class="form-control input-lg"  aria-describedby="helpBlock" value="" placeholder="URL" requiproperty>
-            </div><!-- /.col-lg-6 col-lg-offset-2 end -->
-            
-            <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2">      
-              <button class="btn btn-lg btn-block primary-btn" type="submit" value="analyzeListing">Analyze</button>
-            </div><!-- /.col-lg-2 end -->
-            
-          </div><!-- /.row form-group end -->
-          
-          <div class="row form-group">
-            <div class="col-lg-10">
-              <h3 id="helpBlock" class="h3 text-left help-block"><small>Enter a URL from Zillow to begin a property analysis</small></h3>
-            </div><!-- /.col-lg-6 col-lg-offset-2 end -->
-          </div><!-- /.row form-group end -->
-          
-        </form><!-- /.form-horizontal end -->
-        
-      </div><!-- /.col-md-9 col-lg-12 end -->
-    </div><!-- /.row end -->
-    
+  <div class="container-fluid"> 
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">  
-        
-        <!--<ul class="nav nav-tabs" role="tablist" data-tabs="tabs">
-            <li role="form" class="active"><a aria-controls="property" role="tab" data-toggle="tab" href="#property">Property</a></li>
-            <li role="form"><a aria-controls="comparables" role="tab" data-toggle="tab" href="#comparables">Comparables</a></li>
-            <li role="form"><a aria-controls="repairs" role="tab" data-toggle="tab" href="#repairs">Repairs</a></li>
-            <li role="form"><a aria-controls="income" role="tab" data-toggle="tab" href="#income">Income</a></li>
-            <li role="form"><a aria-controls="expenses" role="tab" data-toggle="tab" href="#expenses">Expenses</a></li>
-            <li role="form"><a aria-controls="financing" role="tab" data-toggle="tab" href="#financing">Financing</a></li>
-            <li role="form"><a aria-controls="purchase" role="tab" data-toggle="tab" href="#purchase">Purchase</a></li>
-            <li role="form"><a aria-controls="cost" role="tab" data-toggle="tab" href="#cost">Cost</a></li>
-            <li role="form"><a aria-controls="returns" role="tab" data-toggle="tab" href="#returns">Returns</a></li>
-        </ul><!-- /.nav nav-tabs -->
-        
-        <div class="tab-content">
-          <div class="tab-pane" id="property">
-            <h1>Property</h1>
-          </div><!-- /.tab-pane -->
-          <div class="tab-pane" id="comparables">
-            <h1>Comparables</h1>
-          </div><!-- /.tab-pane -->
-          <div class="tab-pane" id="repairs">
-            <h1>Repairs</h1>
-          </div><!-- /.tab-pane -->
-          <div class="tab-pane" id="income">
-            <h1>Income</h1>
-          </div><!-- /.tab-pane -->
-          <div class="tab-pane" id="expenses">
-            <h1>Expenses</h1>
-          </div><!-- /.tab-pane -->
-          <div class="tab-pane active" id="financing">
-            <h1>Financing</h1>
-            
+        <h1>Financing</h1>
             
           <div class="row loan">
            
             <form class="form-loan col-lg-6">
-             
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="loan-cost">Cost</label>
                 <input class="loan-cost form-control" type="number" name="loan-cost" placeholder="Ex: $250,000" value="250000" required>
@@ -100,46 +35,17 @@
               </div>
               <button class="btn btn-primary btn-lg btn-loan-go" type="submit">Submit</button>
               <button class="btn btn-success btn-lg btn-loan-reset" type="submit">Reset</button>
-                
             </form><!-- /.form-loan col-lg-6 -->
           
-            <div class="loan-results col-lg-6">
-              
-            </div><!-- /.loan-results col-lg-6 -->
+            <div id="loan-results" class="col-lg-6"></div>
           
           </div><!-- /.row -->
-            
-            
-              
-          </div><!-- /.tab-pane -->
-          <div class="tab-pane" id="purchase">
-            <h1>Purchase</h1>
-          </div><!-- /.tab-pane -->
-          <div class="tab-pane" id="cost">
-            <h1>Cost</h1>
-          </div><!-- /.tab-pane -->
-          <div class="tab-pane" id="returns">
-            <h1>Returns</h1>
-          </div><!-- /.tab-pane -->
-        </div><!-- /.tab-content -->
-        
       </div><!-- /.col-lg-8 col-lg-offset-2 end -->
     </div><!-- /.row end -->
-    
-    
   </div><!-- /.container-fluid end -->
-
-
-<div id="footer">
-  <a href="contact.html">Contact Me</a>
-</div><!-- /End of #footer -->
- 
   
   <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/xml2json.js"></script>
-  <script src="js/api.js"></script>
-  <script src="loan.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/loan.js"></script>
 </body>
 </html>
