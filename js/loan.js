@@ -17,7 +17,7 @@ function loan() {
   var N = - (term);
   var Q = Math.pow(K,N);
   var amount = P * ( J / ( 1 - Q ));
-  var payment = ((Math.round(payment * 100)) / 100);
+  var payment = ((Math.round(amount * 100)) / 100);
   
   var HTML = ('<table class="table table-striped">' +
                 '<tr>' +
