@@ -1,15 +1,16 @@
-header {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 60px;
-  background-color: $primary-color;
-  border-bottom: solid 1em $secondary-color;
+.input-group-addon-before {
+	min-width: 35px;
 }
-  
-header img {
-  position: absolute;
-  top: 5px;
-  left: 15px;
-  width: 200px;
+
+.input-group-addon-after {
+	min-width: 45px;
+}
+
+#input-group-addon-years {
+	border-left: none;
+}
+
+.input-group-addon-btn.active {
+	background-color: #337ab7;
+	color: #EEE;
 }
