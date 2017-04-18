@@ -1,30 +1,3 @@
-function validateForm(inputValue) {
-	var loanCost = $('.loan-cost').attr("class");
-	var loanCost = $('.loan-cost');
-	var loanDown = $('.loan-down');
-	var loanRate = $('.loan-rate');
-	var loanTerm = $('.loan-term');
-	var loanTaxe = $('.loan-taxe');
-	var loanInsu = $('.loan-insu');
-	var loanDues - $('.loan-dues');
-	
-	var cost = $('.loan-cost').val();
-	var down = $('.loan-down').val();
-	var rate = $('.loan-rate').val();
-	var term = $('.loan-term').val();
-	var taxe = $('.loan-taxe').val();
-	var insu = $('.loan-insu').val();
-	var dues - $('.loan-dues').val();
-	.forEach(function(item) {
-		if (inputValue == "") {
-			$('.loan-' + inputName).closest('form-group').addClass('has-error');
-			return false;
-		} else {
-			$('').closest('form-group').addClass('has-success');
-		}
-	})
-}
-
 function dollars(num) {
 	// Convert fixed amount to dollars
 	var numRounded = ((Math.round(num * 100)) / 100).toFixed(2);
@@ -32,10 +5,7 @@ function dollars(num) {
 	return ("$" + numRounded);
 }
 
-function loan(cost, down, rate, term, taxe, insu) {
-	
-	validateForm(cost);
-	
+function loan(cost, down, rate, term, taxe, insu, dues) {
 	// Term changed to months if years selected. 
 	// If not, no changes and label is months.
 	var termID = $('.input-group-addon-btn.active').attr('id');
@@ -73,6 +43,7 @@ function loan(cost, down, rate, term, taxe, insu) {
 	var termLoan = (termLength + termLabel);
 	var taxeLoan = dollars(taxeMonthly);
 	var insuLoan = dollars(insuMonthly);
+  var duesLoan = dollars(dues);
   
   var HTML = ('<table class="table table-striped">' +
                 '<tr>' +
@@ -102,6 +73,10 @@ function loan(cost, down, rate, term, taxe, insu) {
 								'<tr>' +
                   '<td>Insurance</td>' +
                   '<td>' + insuLoan + '</td>' +
+                '</tr>' +
+                '<tr>' +
+                  '<td>HOA Dues</td>' +
+                  '<td>' + duesLoan + '</td>' +
                 '</tr>' +
               '</table>');
    return ($('#loan-results').html(HTML));

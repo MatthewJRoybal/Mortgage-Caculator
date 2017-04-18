@@ -1,7 +1,5 @@
 // App
 $(document).ready(function() {
-	var loanCost = $('.loan-cost').closest('form-group').attr("id");
-	console.log(loanCost);
 	// Allow user to select a term of months or years
 	$('.input-group-addon-btn').on('click', function() {
 		var activeBtn = $(this).hasClass('active');

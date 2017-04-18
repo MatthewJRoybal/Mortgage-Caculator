@@ -14,3 +14,11 @@
 	background-color: #337ab7;
 	color: #EEE;
 }
+
+.form-group.has-error #input-group-addon.active {
+  background-color: #a94442;
+}
+
+.form-group.has-success #input-group-addon.active {
+  background-color: #3c763d;
+}
