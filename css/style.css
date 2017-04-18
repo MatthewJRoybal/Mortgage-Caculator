@@ -15,10 +15,19 @@
 	color: #EEE;
 }
 
-.form-group.has-error #input-group-addon.active {
+.form-loan .form-group.has-error .input-group-addon-btn.active {
   background-color: #a94442;
 }
 
-.form-group.has-success #input-group-addon.active {
-  background-color: #3c763d;
+.form-loan .form-group.has-success .input-group-addon-btn.active {
+background-color: #3c763d;
 }
+
+.form-loan .form-group-term .form-control-feedback {
+  right: 135px;
+}
+
+.form-loan .form-control-feedback {
+  right: 45px;
+}
+
